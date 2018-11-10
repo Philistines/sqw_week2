@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/btn_scan_qr_code"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:layout_toRightOf="@+id/btn_scan_qr_code"
+            android:background="@drawable/myshape"
+            android:drawableLeft="@drawable/ic_search_black_24dp" />
+    </RelativeLayout>
+    <com.bawei.sqw_week2.ui.view.MyTextView
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="大王让我来巡山，寻了南山寻北山,寻了南山寻北山,寻了南山寻北山"
+        android:background="@color/colorAccent"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_page"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp" />
+
+            <GridView
+                android:id="@+id/gv_category"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:numColumns="3"></GridView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gv_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

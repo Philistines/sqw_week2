@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bawei.sqw_week2.ui.activity.com.bawei.sqw_week2.regist.view.RegistActivity">
+    <EditText
+        android:id="@+id/ed_regist_username"
+        android:hint="请输入用户名"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_regist_password"
+        android:hint="请输入密码"
+        android:layout_margin="10dp"
+        android:password="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/ed_regist_password_confirm"
+        android:hint="请再次输入密码"
+        android:layout_margin="10dp"
+        android:password="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_regist_regist"
+        android:layout_margin="10dp"
+        android:text="注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
